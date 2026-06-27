@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Project runtime data (user-specific, don't commit)
+scans/*.json
+results/*/*.json
+reports/*.html
+cache/*
+tools_ext/
+dict/*.txt
+!dict/web_paths.txt
+
+# Test artifacts
+*.log
+tmp/

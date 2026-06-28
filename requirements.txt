@@ -1,0 +1,31 @@
+# bee-py 渗透测试框架依赖
+# 核心HTTP/网络
+certifi>=2024.0.0
+charset-normalizer>=3.0.0
+idna>=3.4
+requests>=2.31.0
+urllib3>=2.0.0
+
+# 爆破模块依赖
+paramiko>=3.0.0
+pymysql>=1.0.0
+redis>=5.0.0
+cryptography>=41.0.0
+PySocks>=1.7.1; python_version >= "3.7"
+# Shiro反序列化AES加密需要
+pycryptodome>=3.19.0
+# 新增服务爆破依赖
+psycopg2-binary>=2.9.9
+pymongo>=4.6.0
+# 可选依赖（按需安装）
+# impacket>=0.11.0  # SMB爆破
+# vncdotool>=0.13.0  # VNC爆破
+
+# 侦察模块依赖
+dnspython>=2.3.0
+python-whois>=0.9.0; python_version >= "3.7"
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# 可选：如果需要使用ffuf/sqlmap等外部工具，需单独安装
+# 外部工具依赖不是Python包，需通过系统包管理器安装

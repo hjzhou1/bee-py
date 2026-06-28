@@ -1,0 +1,25 @@
+# bee-py v1.0.1 火凤配置文件
+# 所有配置项均可通过命令行参数覆盖
+
+scan:
+  threads: 50
+  timeout: 8
+  verify_ssl: true
+  rate_limit_enabled: true
+  rate_limit_preset: normal    # fast / normal / safe
+  proxy_file: proxies.txt
+  subdomain_scan_enabled: true
+  wildcard_404_detect: true
+  max_dirs_per_scan: 5000
+
+output:
+  scans_dir: data/scans
+  results_dir: data/results
+  reports_dir: data/reports
+  dicts_dir: dicts
+  cache_dir: data/cache
+
+proxy:
+  strategy: round_robin      # round_robin / random / least_used
+  health_check: true
+  max_failures: 3

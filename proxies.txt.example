@@ -1,0 +1,28 @@
+# ==============================================
+# bee-py 代理IP池配置文件示例
+# 复制此文件为 proxies.txt 并填入你的代理地址即可使用
+# ==============================================
+#
+# 支持的代理格式：
+# 1. HTTP代理:  http://host:port
+# 2. HTTP代理(带认证): http://username:password@host:port
+# 3. HTTPS代理: https://host:port
+# 4. SOCKS5代理: socks5://host:port (需要安装PySocks)
+# 5. SOCKS5代理(带认证): socks5://username:password@host:port
+#
+# 每行一个代理，#开头为注释行
+# 系统会自动轮询使用这些代理，失败自动切换
+#
+# ==============================================
+# 使用说明：
+# 1. 购买代理IP服务后，将服务商提供的代理地址按下面格式填入
+# 2. 命令行启动: python saomiao.py example.com --proxy proxies.txt
+# 3. 或在diaodu.py调度中配置proxy_file参数
+# ==============================================
+
+# 示例配置（删除下面行并填入你自己的代理）：
+# http://127.0.0.1:8080
+# http://user:pass@proxy1.example.com:8080
+# socks5://127.0.0.1:1080
+# socks5://user:pass@proxy2.example.com:1080
+# https://proxy3.example.com:443
